@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="label" content="discriptoin" />
+    <title>input</title>
+</head>
+
+<body>
+
+    <!-- <label>Token</label> -->
+    <form action="php.py">
+        <label>URL</label>
+        <br>
+        <input type="url" required>
+        <br>
+        <br>
+        <label>Search</label>
+        <br>
+        <input type="search" placeholder=" Enter A Search Word" autofocus>
+        <br>
+        <br>
+        <label>Upluod</label>
+        <br>
+        <input type="file">
+        <br>
+        <br>
+        <label>Date</label>
+        <input type="date" required value="10/25/1982">
+        <br>
+        <br>
+        <label>Month</label>
+        <input type="month" required value="October 1982">
+    </form>
+    <form action="" method="get">
+        <input type="text" hidden value="b92f1fc2fce391ad7af633723afd3055">
+        <hr/>
+        <label>Email</label>
+        <input type="email" disabled value="o@o.com">
+        <hr/>
+        <label>username</label>
+        <input type="text" autofocus minlength="5" maxlength="20">
+        <hr/>
+        <h3>skils</h3>
+        <label for="Planning">Planning</label>
+        <input type="checkbox" id="Planning">
+        <p></p>
+        <label for="Analysis">Analysis</label>
+        <input type="checkbox" id="Analysis">
+        <p></p>
+        <label for="Advanced Search">Advanced Search</label>
+        <input type="checkbox" id="Advanced Search">
+        <p></p>
+        <label for="Logical Thinking">Logical Thinking</label>
+        <input type="checkbox" id="Logical Thinking">
+        <p></p>
+        <label for="Problem Solving">Problem Solving</label>
+        <input type="checkbox" id="Problem Solving">
+        <hr/>
+    </form>
+    <p></p>
+    <form>
+        <label for="book">Choose Book : </label>
+        <select name="book" id="book">
+            <optgroup label="PHP" >
+                <option value="1">v5.0</option>
+                <option value="2">v7.0</option>
+                <option value="3">v8.0</option>
+            </optgroup>
+            <optgroup label="Python">
+                <option value="3">v2.0</option>
+                <option value="4">v3.0</option>
+                <option value="5">v3.9</option>
+            </optgroup>
+        </select>
+        <h3>Jops</h3>
+        <input type="radio" name="os" id="Scrum Master">
+        <label for="Scrum Master">Scrum Master</label>
+        <hr/>
+        <input type="radio" name="os" id="Project Manager">
+        <label for="Project Manager">Project Manager</label>
+        <hr/>
+        <input type="radio" name="os" id="Business Analyst">
+        <label for="Business Analyst">Business Analyst</label>
+        <hr/>
+        <input type="radio" name="os" id="Back-End Developer">
+        <label for="Back-End Developer">Back-End Developer</label>
+        <hr/>
+        <input type="radio" name="os" id="Front-End Developer">
+        <label for="Front-End Developer">Front-End Developer</label>
+        <hr/>
+        <textarea name="as" placeholder="Write Here When want to learn prmaga"></textarea>
+        <hr/>
+        <input type="reset" name="Empity" value="Empity">
+        <hr/>
+        <input type="submit" name="send" value="send">
+    </form>
+    <div>
+        <pre>
+            <code>
+                Hello Line One
+                Hello Line Two
+                Hello Line Three
+                      Hello Line Four
+            </code>
+        </pre>
+    </div>
+</body>
+
+</html>

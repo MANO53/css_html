@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" !Important Declaration And Use Cases and transtion" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .one {
+            width: 200px;
+            height: 100px;
+            background-color: turquoise;
+            text-align: center;
+            transition: all .5s 2s ease-in;
+        }
+        
+        .two {
+            width: 200px;
+            height: 100px;
+            background-color: turquoise;
+            text-align: center;
+            transition-duration: .5s;
+            transition-delay: .5s;
+            transition-property: margin-top, height, width;
+            transition-timing-function: ease-in;
+        }
+        
+        .one:hover {
+            margin-top: 20px;
+            height: 150px;
+            width: 250px;
+        }
+        
+        .two:hover {
+            margin-top: 20px;
+            height: 150px;
+            width: 250px;
+        }
+        
+        .three {
+            overflow: hidden;
+            margin: auto;
+            width: 400px;
+            height: 200px;
+            padding: 10px;
+            background-color: #EEE;
+        }
+        
+        .three .on,
+        .three .tw {
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+        
+        .on {
+            background-color: #DDD;
+        }
+        
+        .tw .up {
+            height: 80px;
+            background-color: aqua;
+            margin-bottom: 20px;
+        }
+        
+        .tw .down {
+            height: 80px;
+            margin-top: 20px;
+            background-color: black;
+        }
+        
+         :root {
+            --maincolor: blue;
+            --padding: 10px;
+        }
+        
+        main {
+            background-color: var(--maincolor, black);
+            color: white;
+            padding: var(--padding);
+        }
+        
+        h2 {
+            color: green;
+            background-color: #EEE;
+            padding: var(--padding);
+        }
+        
+        p {
+            color: green;
+            padding: var(--padding);
+            border: 20px solid green;
+        }
+        
+        a:hover {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">One</div>
+    <div class="two">Two</div>
+    <div class="three">
+        <div class="on"></div>
+        <div class="tw">
+            <div class="up"></div>
+            <div class="down"></div>
+        </div>
+    </div>
+    <main>
+        <h2>welcome in this school</h2>
+    </main>
+    <p>thank you for watching this </p>
+    <a href="#">School</a>
+
+</body>
+
+</html>

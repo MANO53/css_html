@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+        div {
+            width: 1000px;
+            background-color: #eee;
+        }
+        
+        div p {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            float: left;
+            width: calc((100% - 75px)/ 5);
+        }
+        
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>pargraph one</p>
+        <p>pargraph two </p>
+        <p>pargraph three</p>
+        <p>pargraph four </p>
+        <p class="clear"></p>
+    </div>
+</body>
+
+</html>

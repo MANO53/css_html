@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .layout {
+            background-color: #EEE;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 50px auto 50px;
+            grid-template-areas: "Heade Heade Heade Heade Heade Heade Heade Heade Heade Heade""cont cont cont cont cont cont cont side side side""Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
+            gap: 10px 10px;
+        }
+        
+        header {
+            grid-area: Heade;
+            background-color: skyblue;
+        }
+        
+        section {
+            grid-area: cont;
+            background-color: orange;
+        }
+        
+        aside {
+            grid-area: side;
+            background-color: gray;
+        }
+        
+        footer {
+            grid-area: Footer;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <header>Header</header>
+        <section>Section</section>
+        <aside>Sidebar</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

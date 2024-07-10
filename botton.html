@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=devise-width, initail-scale=1.0, user-scalable=no">
+    <title>led control </title>
+    <style>
+        html {
+            font-family: inherit;
+            display: inline-block;
+            margin: 0px auto;
+            text-align: center;
+        }
+        
+        body {
+            margin-top: 50px;
+        }
+        
+        h1 {
+            color: #444444;
+            margin: 50px auto 30px;
+        }
+        
+        h3 {
+            color: #444444;
+            margin-bottom: 50px;
+        }
+        
+        .button {
+            display: block;
+            width: 80px;
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 13px 30px;
+            text-decoration: none;
+            font-size: 25px;
+            margin: 0px auto 35px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        .button-on {
+            background-color: aquamarine;
+        }
+        
+        .button-on active {
+            background-color: rgba(127, 255, 212, 0.684);
+        }
+        
+        .button-off {
+            background-color: antiquewhite;
+        }
+        
+        .button-off active {
+            background-color: rgba(240, 248, 255, 0.44);
+        }
+        
+        p {
+            font-size: 14px;
+            color: darkgoldenrod;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ESP8622 Wep server </h1>
+    <h3>DTU</h3>
+    <p>led status: OFF </p>
+    <a class="button button-on " herf=\ "/?led1on\">ON</a>
+</body>
+
+</html>

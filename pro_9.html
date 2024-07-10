@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caret color</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        p {
+            width: 400px;
+            height: 20px;
+            text-wrap: wrap;
+            caret-color: aqua;
+        }
+        
+        p::selection {
+            color: yellow;
+            background-color: black;
+        }
+        
+        a {
+            pointer-events: none;
+        }
+        
+        .parent {
+            width: 800px;
+            height: 500px;
+            margin: 20px auto;
+            background-color: #EEE;
+            display: grid;
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        
+        .parent div {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text">
+    </form>
+    <a href="#">google</a>
+    <p contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, similique quasi ullam totam dolore fugiat cupiditate nobis vero eveniet officiis, commodi ipsam ipsum laudantium atque in minima. Recusandae, eaque quibusdam.</p>
+    <br>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+
+</html>

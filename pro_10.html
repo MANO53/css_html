@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .page {
+            display: grid;
+            height: 100vh;
+            background-color: #EEE;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 50px auto 50px;
+            grid-template-areas: "logo logo logo nav nav nav nav nav nav nav " "cont cont cont cont cont cont cont cont sid sid" "footer footer footer footer footer footer footer footer footer footer";
+        }
+        
+        h2 {
+            grid-area: logo;
+            background-color: red;
+            color: white;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        ul li {
+            display: inline-block;
+        }
+        
+        nav {
+            grid-area: nav;
+            background-color: blue;
+            color: white;
+        }
+        
+        section {
+            grid-area: cont;
+            background-color: yellow;
+            color: white;
+        }
+        
+        aside {
+            grid-area: sid;
+            background-color: green;
+            color: white;
+        }
+        
+        footer {
+            grid-area: footer;
+            background-color: aqua;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <h2>AShraf</h2>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Serecise</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <section>content</section>
+        <aside>sidebar</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

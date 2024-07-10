@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        
+        .parent {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .parent>div {
+            background-color: red;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        
+        @media (max-width:767px) {}
+        
+        @media (min-width:768px)and (max-width:991px) {
+            .parent div {
+                width: calc(50% - 10px);
+            }
+        }
+        
+        @media (min-width:992px) {
+            .parent div {
+                width: calc(25% - 5px);
+            }
+        }
+        
+        @media (min-width:1200px) {}
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>four</div>
+    </div>
+</body>
+
+</html>

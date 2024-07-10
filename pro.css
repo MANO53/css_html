@@ -1,0 +1,63 @@
+div {
+    background-color: #EEE;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    visibility: visible;
+}
+
+span {
+    background-color: #EEE;
+    padding: 10px;
+    margin: 10px;
+    /* width: 300px;
+    height: 30px; */
+}
+
+span {
+    background-color: #EEE;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 30px;
+    display: block;
+}
+
+.one {
+    padding: 10px;
+    background-color: #EEE;
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.two {
+    padding: 10px;
+    background-color: #EEE;
+    color: green;
+    border-bottom: 2px solid green;
+}
+
+.three {
+    padding: 10px;
+    background-color: #EEE;
+    color: rgb(0, 128, 255);
+    border-bottom: 2px solid rgb(0, 128, 255);
+}
+
+.four {
+    padding: 10px;
+    background-color: #EEE;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.one,
+.two,
+.three,
+.four {
+    padding: 20px;
+    background-color: #EEE;
+    margin: 30px 0;
+}

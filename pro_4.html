@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soudo</title>
+    <style>
+        .one {
+            background-color: red;
+        }
+        
+        .two {
+            background-color: #EEE;
+            width: 400px;
+            height: 300px;
+        }
+        
+        div:empty {
+            border: 5px solid red;
+        }
+        
+        a {
+            text-decoration: none;
+            color: red;
+        }
+        
+        a:hover {
+            color: aquamarine;
+        }
+        
+        a:visited {
+            color: blueviolet;
+        }
+        
+        .ch:checked+label {
+            color: blueviolet;
+        }
+        
+        .in {
+            border: 3px solid red;
+        }
+        
+        .in:focus {
+            background-color: aqua;
+            border: 3px solid aqua;
+            outline: none;
+        }
+        
+        .you::first-letter {
+            display: inline-block;
+            background-color: blueviolet;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        
+        .you_1 span {
+            display: inline-block;
+            background-color: blueviolet;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        
+        .three::first-line {
+            font-weight: bold;
+            color: blueviolet;
+        }
+        
+        .three::selection {
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">Normal Elment </div>
+    <hr>
+    <div class="two"></div>
+    <hr>
+    <a href="https://google.com">link 1</a>
+    <a href="https://facebook.com">link 2</a>
+    <a href="https://twiter.com">link 3</a>
+    <hr>
+    <form action="">
+        <div>
+            <label for="">User Name</label>
+            <input class="in" type="text" placeholder="enter user name">
+        </div>
+        <div>
+            <input class="ch" type="checkbox" id="ch">
+            <label for="ch">Becarfull</label>
+        </div>
+        <br>
+        <hr>
+    </form>
+    <div class="you">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis provident impedit accusamus modi dolorem distinctio praesentium assumenda, ipsa sint magni ducimus cum consequuntur iure asperiores qui. Debitis sed obcaecati quibusdam.
+    </div>
+    <hr>
+    <div class="you_1">
+        <span>L</span>orem ipsum dolor, sit amet consectetur adipisicing elit. Debitis provident impedit accusamus modi dolorem distinctio praesentium assumenda, ipsa sint magni ducimus cum consequuntur iure asperiores qui. Debitis sed obcaecati quibusdam.
+    </div>
+    <hr>
+    <div class="three">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet quisquam illo ipsam nobis dolorum laudantium, magnam veritatis maxime expedita dolorem praesentium accusamus necessitatibus quod odit dignissimos officiis vel autem?
+    </div>
+</body>
+
+</html>

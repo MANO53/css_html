@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS soudo_2</title>
+    <style>
+        .parent {
+            margin-bottom: 20px;
+            overflow: hidden;
+            counter-increment: counter;
+        }
+        
+        .one {
+            background-color: #EEE;
+            float: left;
+            padding: 10px;
+            width: 600px;
+        }
+        
+        .user {
+            background-color: #EEE;
+            padding: 10px;
+            width: 50px;
+            float: left;
+            margin-right: 20px;
+            font-size: 50px;
+            text-align: center;
+        }
+        
+        .one {
+            position: relative;
+        }
+        
+        .one .pipeline {
+            position: absolute;
+            width: 5px;
+            height: 100%;
+            right: 0px;
+            top: 0px;
+            background-color: blueviolet;
+        }
+        
+        .one::before {
+            content: '';
+            position: absolute;
+            position: absolute;
+            border-style: solid;
+            border-width: 10px;
+            border-color: transparent green transparent transparent;
+            width: 0;
+            height: 0;
+            left: -19px;
+            top: 36%;
+        }
+        
+        .two {
+            position: relative;
+            background-color: #EEE;
+            float: left;
+            padding: 10px;
+            width: 600px;
+        }
+        
+        .two::before {
+            content: '';
+            position: absolute;
+            position: absolute;
+            border-style: solid;
+            border-width: 10px;
+            border-color: transparent green transparent transparent;
+            width: 0;
+            height: 0;
+            left: -19px;
+            top: 36%;
+        }
+        
+        .two::after {
+            content: counter(counter);
+            position: absolute;
+            position: absolute;
+            width: 19px;
+            height: 30%;
+            right: -19px;
+            top: 23px;
+            background-color: blueviolet;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="user">O</div>
+        <div class="one">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque, in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+            <span class="pipeline"></span>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="user">A</div>
+        <div class="one">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque, in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+            <span class="pipeline"></span>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="user">E</div>
+        <div class="two">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque, in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+        </div>
+    </div>
+    <div class="parent">
+        <div class="user">E</div>
+        <div class="two">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque, in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+        </div>
+    </div>
+    <div class="parent">
+        <div class="user">E</div>
+        <div class="two">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque, in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+        </div>
+    </div>
+</body>
+
+</html>

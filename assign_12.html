@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flex assign</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .one {
+            margin: 20px auto;
+            width: 100px;
+            height: 100px;
+            background-color: #DDD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            box-shadow: 13px 0px 2px 0px orange, -11px -1px 2px skyblue;
+        }
+        
+        .parent {
+            margin: 20px auto;
+            width: 600px;
+            height: 300px;
+            background-color: #EEE;
+        }
+        
+        .parent div {
+            display: flex;
+            background-color: rgb(115, 13, 13);
+            align-items: center;
+        }
+        
+        div {
+            display: flex;
+            background-color: rgb(115, 13, 13);
+            width: 180px;
+            height: 50px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">Ashraf</div>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.parent .child span {
+    color: red;
+}
+
+.parent span {
+    color: blue;
+}
+
+div p,
+.title {
+    color: green;
+    text-shadow: 1px 1px rebeccapurple;
+    text-align: center;
+    direction: ltr;
+    text-decoration: line-through;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    text-indent: 100px;
+}
+
+.li {
+    display: inline-block;
+    text-decoration: none;
+    background-color: aquamarine;
+    margin: 20px;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+}
+
+.li:hover {
+    background-image: linear-gradient(60deg, red, black);
+    color: rgb(130, 198, 237);
+}
+
+.one,
+.two,
+.three,
+.four {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: red;
+    color: #EEE;
+    height: 10px;
+}
+
+.four {
+    overflow: hidden;
+}
+
+div {
+    text-align: center;
+}

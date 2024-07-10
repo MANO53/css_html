@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --image: skyblue;
+        }
+        
+        body {
+            background-color: var(--image);
+        }
+        
+        h3 {
+            background-color: cadetblue;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        .flex {
+            background-color: #EEE;
+            color: white;
+            padding: 20px;
+            width: 600px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        
+        .flex div {
+            width: calc(98% /5);
+            text-align: center;
+            background-color: red;
+            align-items: center;
+            align-content: center;
+        }
+        
+        .float {
+            background-color: #EEE;
+            color: white;
+            padding: 20px;
+            width: 600px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        
+        .float div {
+            width: 25%;
+            float: left;
+            text-align: center;
+            background-color: red;
+        }
+        
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            border-radius: 2px;
+            display: flex;
+            width: 70px;
+            text-align: center;
+            border: 5px solid black;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>Flex</h3>
+    <div class="flex">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>four</div>
+        <div>five</div>
+    </div>
+    <hr>
+    <h3>Float</h3>
+    <div class="float">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>four</div>
+        <div>five</div>
+    </div>
+    <a href="#">As</a>
+</body>
+
+</html>

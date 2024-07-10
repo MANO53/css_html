@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Application</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        
+        .loud {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+        }
+        
+        .loud div {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: darkgray;
+            margin: 0 5px;
+            animation-name: looding;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-direction: alternate;
+        }
+        
+        .loud .two {
+            animation-delay: .5s;
+        }
+        
+        .loud .three {
+            animation-delay: .7s;
+        }
+        
+        @keyframes looding {
+            from {}
+            to {
+                opacity: .2;
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loud">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+</body>
+
+</html>

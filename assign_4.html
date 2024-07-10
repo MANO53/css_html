@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/../CSS/CSS/assign_4.css">
+    <title>Shadow</title>
+    <style>
+        div p {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: large;
+            text-shadow: 1px 1px 0px rgb(255, 132, 0), 2px 1px 0px rgb(0, 132, 255), 3px 1px 0px purple;
+        }
+        
+        div .one {
+            text-transform: uppercase;
+        }
+        
+        div .two {
+            text-transform: capitalize;
+        }
+        
+        div .three {
+            text-transform: lowercase;
+        }
+        
+        div .one,
+        .two,
+        .three {
+            display: block;
+            text-align: center;
+            text-wrap: nowrap;
+        }
+        
+        .you {
+            text-align: center;
+            display: inline-block;
+            background-color: cadetblue;
+            width: fit-content;
+            text-wrap: wrap;
+        }
+        
+        .you_1 {
+            background-color: #EEE;
+            margin: 10px 0px;
+        }
+        
+        .you_2 {
+            background-color: #EEE;
+            margin: 10px 0px;
+            text-indent: 20px;
+            text-overflow: ellipsis;
+            width: 200px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        body {
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none;
+            display: inline-block;
+            background-color: black;
+            color: red;
+            width: 50px;
+            border-radius: 2px;
+            border-bottom: 3px solid rgb(189, 26, 26);
+        }
+        
+        a:hover {
+            background-image: linear-gradient(100deg, black, blue);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>el zero web school</p>
+    </div>
+    <div class="as">
+        <span class="one">elzero Web school</span>
+        <span class="two">elzero Web school</span>
+        <span class="three">elzero Web school</span>
+    </div>
+    <div class="you">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea itaque fugit vitae incidunt quis dolores? Id alias eveniet sequi perspiciatis iusto impedit, accusamus maxime reprehenderit blanditiis adipisci sapiente hic velit.
+    </div>
+    <div class="you_1">
+        Lorem ipsum dolor sit amet consectetur,
+    </div>
+    <div class="you_2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea itaque fugit vitae incidunt quis dolores? Id alias eveniet sequi perspiciatis iusto impedit, accusamus maxime reprehenderit blanditiis adipisci sapiente hic velit.
+    </div>
+    <a href="https://elzero.org">ashraf</a>
+</body>
+
+</html>
